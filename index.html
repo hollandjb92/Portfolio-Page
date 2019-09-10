@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jordan B. Holland</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+    />
+    <link rel="stylesheet" href="./assets/CSS/styles.css" />
+  </head>
+
+  <body>
+    <div id="navBar">
+      <div class="ui secondary menu">
+        <div id="navName">
+          <span id="mainTitle">Jordan B. Holland</span>
+        </div>
+        <div id="buttonsdiv">
+          <a id="portfolioNav" class="ui inverted button">
+            Portfolio
+          </a>
+          <a id="aboutNav" class="ui inverted button">About</a>
+
+          <a id="contactNav" class="ui inverted button">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div id="mainHead">
+        <div id="imageContainer">
+          <a href="/"
+            ><img src="./assets/myAvatar.svg" id="avatarJordan"" alt="
+            avatarImage"></a
+          >
+        </div>
+
+        <div id="nameDiv"><h1>Jordan Holland</h1></div>
+        <div class="dividerLight"></div>
+        <span id="position">Full Stack Software Developer</span>
+      </div>
+    </header>
+
+    <section>
+      <div id="PortfolioSection">
+        <h2 id="portfolioTitle">Portfolio</h2>
+        <div class="dividerDark"></div>
+        <div id="projects">
+          <div class="project">
+            <div class="overlay">
+              <a
+                target="_blank"
+                href="https://github.com/hollandjb92/PoliticalQuiz"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://pacific-inlet-24027.herokuapp.com/"
+                ><i class="fas fa-link"></i
+              ></a>
+            </div>
+            <img
+              src="https://media.giphy.com/media/WrbGbi2SYA8JdmwoKa/giphy.gif"
+              alt="Politic Architects"
+            />
+          </div>
+          <div class="project">
+            <div class="overlay">
+              <a
+                target="_blank"
+                href="https://github.com/hollandjb92/Music_Heads"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://hollandjb92.github.io/Music_Heads/"
+                ><i class="fas fa-link"></i
+              ></a>
+            </div>
+            <img
+              src="
+            https://media.giphy.com/media/kxlWKMxqVj9KolYo2t/giphy.gif"
+              alt="Music Heads"
+            />
+          </div>
+
+          <div class="project">
+            <div class="overlay">
+              <a
+                target="_blank"
+                href="https://github.com/hollandjb92/eCommerce-React-App"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a target="_blank" href="https://royalty-live.herokuapp.com/"
+                ><i class="fas fa-link"></i
+              ></a>
+            </div>
+            <img
+              src="
+              https://media.giphy.com/media/jqNhKVY46dsn1jawhX/giphy.gif"
+              alt="Royalty Clothing"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="aboutMe">
+        <h2 id="aboutTitle">About Me</h2>
+        <div class="dividerLight"></div>
+        <div id="aboutMeContent">
+          <p>
+            Full Stack Software Developer experienced primarily in Full Stack
+            JavaScript web development, with an big interest in Python and data
+            science. Previously worked in the Healthcare and Laboratory Services
+            field, but decided to refocus my career after getting involved with
+            some minor programming at work. Driven to continue learning and
+            growing as a developer at a company and make use of my familiarity
+            with several programming languages and technologies.
+          </p>
+
+          <p>
+            A lifelong DMV resident, when I am not coding, you'll most likely
+            find me cooking and baking in the kitchen, playing an RPG, or
+            watching a movie off my 1700 film long bucket list. If you likes
+            movies as much as I do, let's talk about them while we code!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="contactMe">
+        <h2 id="contactTitle">Contact Me</h2>
+        <div class="dividerDark"></div>
+        <form action="https://formspree.io/hollandjb@vcu.edu" method="POST">
+          <div class="inputGroup">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-input"
+              placeholder="Email"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="inputGroup">
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Subject"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="inputGroup">
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message"
+              autocomplete="off"
+            ></textarea>
+          </div>
+
+          <div id="status"></div>
+          <button type="submit" id="submitForm" class="ui inverted button">
+            Send
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div id="socialButtons">
+        <a href="https://github.com/hollandjb92" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/jordan-b-holland/" target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+      </div>
+      <p>Copyright &copy; Jordan Holland <span id="year"></span></p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="https://kit.fontawesome.com/8943bf9a35.js"></script>
+    <script src=" ./index.js"></script>
+  </body>
+</html>
